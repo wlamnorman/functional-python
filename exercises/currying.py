@@ -12,4 +12,5 @@ add_5 = curry_add(5)
 add_5_and_6 = add_5(6)
 print(add_5_and_6(7))
 
+# or easier
 print(curry_add(5)(6)(7))
