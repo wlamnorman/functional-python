@@ -1,13 +1,17 @@
 import math
 
+
 def double(x):
     return x * 2
+
 
 def minus_one(x):
     return x - 1
 
+
 def squared(x):
     return x * x
+
 
 function_list = [
     squared,

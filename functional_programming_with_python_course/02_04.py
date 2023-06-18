@@ -1,17 +1,20 @@
 def create_printer():
     def printer():
-        print('Hello functional!')
+        print("Hello functional!")
 
     return printer
 
+
 my_printer = create_printer()
 my_printer()
+
 
 def create_multiplier(a):
     def multiplier(x):
         return x * a
 
     return multiplier
+
 
 double = create_multiplier(2)
 triple = create_multiplier(3)
