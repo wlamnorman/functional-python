@@ -5,6 +5,8 @@ The use for this workspace is to fiddle around with functional programming in Py
 - `functional_programming_with_python_course`: LinkedIn learning course exercises
 - `fractals`: playing around with functional programming to create fractals
 
+![Screenshot 2023-07-16 at 16 09 20](https://github.com/wlamnorman/functional-python/assets/71151811/307f7367-016c-4ca5-838e-dc9a3e4872b3)
+
 ### Notes
 * Functional programming (FP) is imperative unlike object-oriented programming (OOP) which is declarative.
 * Key concepts related to FP are
