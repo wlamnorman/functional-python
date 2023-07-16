@@ -2,16 +2,10 @@ import turtle
 import numpy as np
 
 N_BRANCH_LEVELS: int = 11
-
-# controls trunk branch length and width
 TRUNK_LEN = 100
 TRUNK_WIDTH = 13
-
-# controls reduction in width and length of branches per iteration
 WIDTH_SHRINKAGE_FACTOR: float = 0.8
 LEN_SHRINKAGE_FACTOR: float = 0.8
-
-# controls separation of branches (the degree at which they grow out of previous branch)
 DEG_OF_ROTATION = 30
 
 
@@ -81,8 +75,7 @@ def generate_tree() -> None:
 
             # add random branches (higher probability for outer branches)
             if np.random.uniform(0, 1, 1) < f_(iterations_left):
-                b: int = np.random.binomial(1, 0.5, 1)
-                if b:
+                if np.random.binomial(1, 0.5, 1):
                     iter_draw_branch(
                         iterations_left - 1,
                         left=True,
@@ -103,7 +96,6 @@ def generate_tree() -> None:
 
     turtle.colormode()
     turtle.tracer(0)
-    # turtle.speed(1)
     turtle.hideturtle()
     draw_trunk(TRUNK_LEN, TRUNK_WIDTH)
     iter_draw_branch(
